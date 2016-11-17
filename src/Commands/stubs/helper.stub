@@ -1,0 +1,14 @@
+<?php
+
+if(!function_exists('DummyHelper'))
+{
+    /**
+     * DummyHelper
+     *
+     * @return void
+     */
+    function DummyHelper ()
+    {
+        //
+    }
+}
