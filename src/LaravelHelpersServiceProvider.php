@@ -4,6 +4,7 @@ namespace TaylorNetwork\LaravelHelpers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
+use TaylorNetwork\LaravelHelpers\Commands\HelperMakeCommand;
 
 class LaravelHelpersServiceProvider extends ServiceProvider
 {
@@ -109,7 +110,7 @@ class LaravelHelpersServiceProvider extends ServiceProvider
     public function registerCommands()
     {
         $this->commands([
-            TaylorNetwork\LaravelHelpers\Commands\HelperMakeCommand::class,
+            HelperMakeCommand::class,
         ]);
     }
 
