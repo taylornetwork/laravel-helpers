@@ -1,8 +1,6 @@
 # Replace Variables
 
-This is a submodule of [TaylorNetwork\LaravelHelpers][link-laravel-helpers].
-
-It should be installed as a component of [TaylorNetwork\LaravelHelpers][link-laravel-helpers] for it to work properly with Laravel.
+This is a subtree of [TaylorNetwork\LaravelHelpers][link-laravel-helpers]
 
 ## Usage
 
