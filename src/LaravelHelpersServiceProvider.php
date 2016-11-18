@@ -139,7 +139,17 @@ class LaravelHelpersServiceProvider extends ServiceProvider
      */
     public function registerCustomHelpers()
     {
-        // @todo add this
+        foreach(glob(app_path($this->namespace.'/*')) as $helper)
+        {
+            $helperName = last(explode('/', $helper));
+            if(!in_array($helperName, $this->customExclude))
+            {
+                if(in_array('*', $this->customInclude) || in_array($helperName, $this->customInclude))
+                {
+                    require_once $helper;
+                }
+            }
+        }
     }
 
     /**
