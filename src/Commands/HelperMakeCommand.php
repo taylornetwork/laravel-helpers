@@ -47,4 +47,17 @@ class HelperMakeCommand extends GeneratorCommand
         return $rootNamespace . '\\' . config('laravel_helpers.namespace', 'Helpers');
     }
 
+    /**
+     * Replace DummyHelper in stub
+     * 
+     * @param string $name
+     * @return mixed
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     */
+    protected function buildClass($name)
+    {
+        $stub = $this->files->get($this->getStub());
+
+        return str_replace('DummyHelper', $name, $stub);
+    }
 }
