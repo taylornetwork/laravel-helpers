@@ -41,7 +41,7 @@ $ php artisan make:helper HelperName
 Will create an `app/Helpers` directory and add `HelperName.php`
 
 ``` php 
-\\ app/Helpers/HelperName.php
+// app/Helpers/HelperName.php
 
 if(!function_exists('HelperName'))
 {
