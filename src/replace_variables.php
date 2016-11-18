@@ -23,7 +23,7 @@ if(!function_exists('replace_variables'))
                 return $replaces[$variable];
             }
 
-            return $variable;
+            return $match[0];
         };
 
         return preg_replace_callback('/{.*?}/', $callback, $string);
