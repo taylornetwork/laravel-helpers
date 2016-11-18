@@ -30,6 +30,13 @@ $ php artisan vendor:publish
 
 This adds `laravel_helpers.php` to your `config` directory
 
+## Included Helpers
+
+Click on any of the links to see the helper documentation
+
+- [replace_variables][link-replace-variables]
+- [associative_implode][link-associative-implode]
+
 ## Usage
 
 To create a helper function 
@@ -71,3 +78,5 @@ By default `TaylorNetwork\LaravelHelpers\LaravelHelpersServiceProvider` will inc
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [link-author]: https://github.com/taylornetwork
+[link-replace-variables]: https://github.com/taylornetwork/replace-variables
+[link-associative-implode]: https://github.com/taylornetwork/associative-implode
