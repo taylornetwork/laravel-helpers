@@ -58,6 +58,6 @@ class HelperMakeCommand extends GeneratorCommand
     {
         $stub = $this->files->get($this->getStub());
 
-        return str_replace('DummyHelper', last(explode('\\', $name)), $stub);
+        return str_replace('DummyHelper', $this->getNameInput(), $stub);
     }
 }
