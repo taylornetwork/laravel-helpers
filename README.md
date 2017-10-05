@@ -12,6 +12,12 @@ $ composer require taylornetwork/laravel-helpers
 
 ## Setup
 
+Laravel should automatically discover the package service provider. If that doesn't work for some reason, follow the Manual Setup.
+
+### Manual Setup
+
+Only use these steps if Laravel does not auto discover the service provider.
+
 Add the service provider to the providers array in your `config/app.php`
 
 ``` php
